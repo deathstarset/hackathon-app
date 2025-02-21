@@ -1,5 +1,11 @@
+import PostProcessTable from "./components/ux/post-process";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <PostProcessTable />
+    </>
+  );
 }
 
 export default App;
