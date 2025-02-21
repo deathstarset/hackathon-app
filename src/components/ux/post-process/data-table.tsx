@@ -1,5 +1,3 @@
-"use client";
-
 import {
   ColumnDef,
   flexRender,
@@ -49,7 +47,7 @@ export function DataTable<TData, TValue>({
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-3">
         <Input
           placeholder="Filter Fields..."
           value={(table.getColumn("field")?.getFilterValue() as string) ?? ""}
@@ -62,7 +60,7 @@ export function DataTable<TData, TValue>({
       </div>
 
       <div className="rounded-md border">
-        <Table>
+        <Table className="">
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
