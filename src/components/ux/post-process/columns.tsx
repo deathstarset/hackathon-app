@@ -5,6 +5,7 @@ export type Suggestion = {
   id: number;
   field: string;
   activity: string;
+  machineDecision: "accepted" | "rejected";
   description: string;
 };
 
@@ -20,6 +21,10 @@ export const columns: ColumnDef<Suggestion>[] = [
   {
     accessorKey: "description",
     header: "Description",
+  },
+  {
+    accessorKey: "machineDecision",
+    header: "Machine Decision",
   },
   {
     id: "actions",
