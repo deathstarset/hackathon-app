@@ -1,11 +1,13 @@
 import { ColumnDef } from "@tanstack/react-table";
 import TableActions from "./table-actions";
+import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
 
 export type Suggestion = {
   id: number;
   field: string;
   activity: string;
-  machineDecision: "accepted" | "rejected";
+  machine: "accepted" | "rejected";
   description: string;
 };
 
@@ -23,8 +25,20 @@ export const columns: ColumnDef<Suggestion>[] = [
     header: "Description",
   },
   {
-    accessorKey: "machineDecision",
-    header: "Machine Decision",
+    accessorKey: "machine",
+    header: "Machine",
+    cell: ({ row }) => {
+      const decision = row.original.machine;
+      return (
+        <Badge
+          className={cn(
+            decision === "accepted" ? "bg-green-500" : "bg-red-500"
+          )}
+        >
+          {decision}
+        </Badge>
+      );
+    },
   },
   {
     id: "actions",
