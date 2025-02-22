@@ -8,6 +8,7 @@ export const data: Suggestion[] = [
     description:
       "معالجة ملفات تأشيرة وحجز مواعيد والتوجبه الزبائن في تنظيم ملفات وإعطاء نصائح",
     machine: "rejected",
+    human: "accepted",
   },
   {
     id: 3,
@@ -16,13 +17,15 @@ export const data: Suggestion[] = [
     description:
       "تقديم استشارات في مجال السفر و الهجرة من أجل مساعدة الناس على الحصول على المعلومات الصحيحة من المصادر الرسمية و توضيح الحقوق والواجبات و تقديم النصائح التي تمكنهم من ضمان حقوقهم و تجنب الاحتيال خلال سفرهم",
     machine: "accepted",
+    human: "accepted",
   },
   {
     id: 4,
     field: "Services à la personne",
     activity: "الرسم بالزيت والرمل",
-    description: "رسم أشخاص وطبيعة و مناظر صحراوية  بالزيت والرمل",
+    description: "رسم أشخاص وطبيعة و مناظر صحراوية بالزيت والرمل",
     machine: "rejected",
+    human: "rejected",
   },
   {
     id: 5,
@@ -31,6 +34,7 @@ export const data: Suggestion[] = [
     description:
       "dessinateur projeteur en travaux publics (bâtiment, château d'eau, stades..ex) En plus de tout ce qui concerne le béton armé. Suivi technique des travaux de construction sur chantier conformes aux normes de l'étude",
     machine: "accepted",
+    human: "rejected",
   },
   {
     id: 6,
@@ -39,6 +43,7 @@ export const data: Suggestion[] = [
     description:
       "تقديم دورات مصورة عن بعد ودورات ميدانية في مجال تربية النحل وتقنيات تربية الملكات وانتاج الغذاء الملكي ومختلف منتجات الخلية",
     machine: "rejected",
+    human: "accepted",
   },
   {
     id: 7,
@@ -46,6 +51,7 @@ export const data: Suggestion[] = [
     activity: "ميكانيكي السيارات",
     description: "ميكانيسيا عادي",
     machine: "accepted",
+    human: "accepted",
   },
   {
     id: 8,
@@ -54,6 +60,7 @@ export const data: Suggestion[] = [
     description:
       "الأشغال الصغيرة للبناء والدهن حرفي جباس كل أعمال الجبس الفنية",
     machine: "rejected",
+    human: "rejected",
   },
   {
     id: 9,
@@ -61,6 +68,7 @@ export const data: Suggestion[] = [
     activity: "repartion chod et froid",
     description: "تصليح وتركيب اجهزة التبريد والتكييف",
     machine: "accepted",
+    human: "accepted",
   },
   {
     id: 10,
@@ -68,6 +76,7 @@ export const data: Suggestion[] = [
     activity: "إستخراج الزيوت النباتات العطرية و الطبية",
     description: "تثمين النباتات العطرية و الطبية خاصة منها الغابية",
     machine: "rejected",
+    human: "rejected",
   },
   {
     id: 11,
@@ -76,6 +85,7 @@ export const data: Suggestion[] = [
     description:
       "Donner des cours d’anglais pour adultes et enfants en ligne Préparation des tests Internationaux Entretien d’embauche.. etc",
     machine: "accepted",
+    human: "accepted",
   },
   {
     id: 12,
@@ -83,6 +93,7 @@ export const data: Suggestion[] = [
     activity: "plombier سباك",
     description: "أعمال تركيب وصيانة وفحص وتشغيل وإصلاح أنظمة السباكة",
     machine: "rejected",
+    human: "rejected",
   },
   {
     id: 13,
@@ -90,6 +101,7 @@ export const data: Suggestion[] = [
     activity: "crochet",
     description: "Je fais des vêtements en crochet et des accessoires.",
     machine: "accepted",
+    human: "accepted",
   },
   {
     id: 14,
@@ -97,6 +109,7 @@ export const data: Suggestion[] = [
     activity: "réparation airbags",
     description: "Réparation airbags du tableau de bord, volant, sièges , toit",
     machine: "rejected",
+    human: "accepted",
   },
   {
     id: 15,
@@ -105,6 +118,7 @@ export const data: Suggestion[] = [
     description:
       "Installation et préventif des circuits électriques au niveau des bâtiments",
     machine: "accepted",
+    human: "rejected",
   },
   {
     id: 16,
@@ -113,6 +127,7 @@ export const data: Suggestion[] = [
     description:
       "امتلاك منصة اعمال حرة مثل فايفر هيا انك تفت منصو تعطي فلرصة لناس تمار نشاطها الداخل في كل تعامل بين عامل وعميل تاخذ ارباح او تعطي لناس باقات يشتركون فيها لكي تسمح لهم بانشاء حساب و العمل",
     machine: "rejected",
+    human: "rejected",
   },
   {
     id: 17,
@@ -120,6 +135,7 @@ export const data: Suggestion[] = [
     activity: "scanner auto",
     description: "DIAGNOSTIQUE AUTOMOBILES",
     machine: "accepted",
+    human: "accepted",
   },
   {
     id: 18,
@@ -127,14 +143,16 @@ export const data: Suggestion[] = [
     activity: "micanic mobil",
     description: "",
     machine: "rejected",
+    human: "rejected",
   },
   {
     id: 19,
     field: "Conseil, Expertise et formation",
-    activity: "formation des perssones dans le dommaine d'aide aux  enfants",
+    activity: "formation des perssones dans le dommaine d'aide aux enfants",
     description:
-      "l'objet de la formation est de former des personnes pour  une activité avec des enfants , ses formations sont spécialisés et ne sont pas assuré dans des centres de formation",
+      "l'objet de la formation est de former des personnes pour une activité avec des enfants , ses formations sont spécialisés et ne sont pas assuré dans des centres de formation",
     machine: "accepted",
+    human: "accepted",
   },
   {
     id: 20,
@@ -143,20 +161,6 @@ export const data: Suggestion[] = [
     description:
       "Développer toutes une gamme de produits parfumés de qualité ( eau de parfum , brume pour le corps , brume de ligne .. etc )",
     machine: "rejected",
-  },
-  {
-    id: 21,
-    field: "Services de loisirs et de récréation",
-    activity: "سياحة وكالة أسفار",
-    description:
-      "تنظيم الرحلات و حجز الفنادق و تذاكر الطائرات و كراء السيارات و إعداد ملفات طلب التأشيرة",
-    machine: "accepted",
-  },
-  {
-    id: 22,
-    field: "Services à la personne",
-    activity: "صناعة ديكورات من المنزل",
-    description: "صناعة ديكورات مختلفة الخامة والاشكال في المنزل",
-    machine: "rejected",
+    human: "accepted",
   },
 ];

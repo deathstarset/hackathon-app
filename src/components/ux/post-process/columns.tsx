@@ -8,9 +8,9 @@ export type Suggestion = {
   field: string;
   activity: string;
   machine: "accepted" | "rejected";
+  human: "accepted" | "rejected";
   description: string;
 };
-
 export const columns: ColumnDef<Suggestion>[] = [
   {
     accessorKey: "field",

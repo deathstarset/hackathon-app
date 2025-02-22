@@ -22,6 +22,7 @@ interface TableActionsProps {
 export default function TableActions({ suggestion }: TableActionsProps) {
   const [viewDialogOpen, setViewDialogOpen] = useState(false);
   const [removeDialogOpen, setRemoveDialogOpen] = useState(false);
+  const [decisionDialogOpen, setDecisionDialogOpen] = useState(false);
 
   return (
     <>
@@ -48,6 +49,9 @@ export default function TableActions({ suggestion }: TableActionsProps) {
           <DropdownMenuItem onClick={() => setRemoveDialogOpen(true)}>
             Remove
           </DropdownMenuItem>
+          <DropdownMenuItem onClick={() => setDecisionDialogOpen(true)}>
+            Decision
+          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
       <ViewSuggestionDialog
@@ -59,6 +63,11 @@ export default function TableActions({ suggestion }: TableActionsProps) {
         suggestion={suggestion}
         setDialogOpen={setRemoveDialogOpen}
         dialogOpen={removeDialogOpen}
+      />
+      <DecisionDialog
+        suggestion={suggestion}
+        setDialogOpen={setDecisionDialogOpen}
+        dialogOpen={decisionDialogOpen}
       />
     </>
   );
@@ -125,6 +134,34 @@ function DeleteSuggestionDialog({
             </Button>
             <Button size={"lg"} variant={"destructive"} className="w-full">
               Remove
+            </Button>
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+}
+interface DecisionDialogProps {
+  suggestion: Suggestion;
+  setDialogOpen: Dispatch<SetStateAction<boolean>>;
+  dialogOpen: boolean;
+}
+function DecisionDialog({
+  suggestion,
+  setDialogOpen,
+  dialogOpen,
+}: DecisionDialogProps) {
+  return (
+    <Dialog open={dialogOpen} onOpenChange={() => setDialogOpen(!dialogOpen)}>
+      <DialogContent className="sm:max-w-[425px] flex flex-col gap-8 p-8">
+        <h3 className="text-2xl font-semibold">Your Decision</h3>
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center justify-between gap-2">
+            <Button size={"lg"} className="w-full" variant={"destructive"}>
+              Reject
+            </Button>
+            <Button size={"lg"} className="w-full bg-green-700">
+              Accept
             </Button>
           </div>
         </div>
